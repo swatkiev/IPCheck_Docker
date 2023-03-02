@@ -13,7 +13,7 @@ def hello_handler(message):
 
 
 @bot.message_handler(content_types=['text'])
-def handler_text2(message):
+def handler_text(message):
     text = message.text
     try:
         test = ipaddress.ip_address(text)
